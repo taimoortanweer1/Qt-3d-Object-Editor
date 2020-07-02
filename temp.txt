@@ -1,0 +1,12 @@
+Laminar Parameters
+
+step2d example
+// Parameters for the simulation setup
+const T lx1   = 5.0;    // length of step in meter
+const T ly1   = 0.75;   // height of step in meter
+const T lx0   = 20.0;   // length of channel in meter
+const T ly0   = 1.5;    // height of channel in meter
+const int N = 60;        // resolution of the model
+const int M = 50;        // resolution of the model
+const T maxPhysT = 40.; // max. simulation time in s, SI unit
+

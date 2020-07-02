@@ -1,0 +1,21 @@
+When the geometry file is loaded, user needs to specify the boundary conditions.
+The boundary conditions refer to the locations within the geometry where a specific flow condition is specified.
+..............................................
+For example an input velocity boundary condition where the flow enters the geometry at the specified velocity
+The outlet boundary condition is where the flow will exit the geometry
+The wall boundary condition is where the flow would see that part of the geometry as a wall.
+The boundary conditions should be specified by clicking on the required face in the loaded geomerty file and right clicking it and a menu should appear
+in which "Add to boundary condition" should appear. It should ask for a name by which the user can identify what boundary it is.
+Like the user specified it as an inlet boundary. The on another face the user specified outlet name to that face.
+Now when the user goes to the boundary condition menu, those inlet and outlet faces will be appearing.
+
+In the inlet, the user can specify a certain boundary condition "inlet velocity or pressure or outlet or mass flow"
+The same can be done at the outlet face.
+Once the boundary conditions are specified, the user can now specify the properties of the fluid.
+This will appear in the different menu. It should be called "material properties". As this relates to the properties of the fluid
+that will be flowing in the geometry.
+The properties of the fluid which I currently want is: density and viscosity. I will let you know more once you are doing that part.
+Then once material properties are finished, the user now needs to specify "Simulation setup". This will include parameters:
+Total number of divisions, total simulation time, simulation time step.
+Please have these incorporated. I will let you know more once these are done.
+
