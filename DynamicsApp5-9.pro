@@ -34,4 +34,5 @@ DISTFILES += \
     page11.txt
 
 HEADERS += \
-    wrapperfunctions.h
+    wrapperfunctions.h \
+    stl_reader.h

@@ -1,10 +1,23 @@
+My todo list..
+1. Crashing issues when loading data.. done
+2. loading default data from parameter file.. done
+3. compensating float data issues when loading data using cpp directory...done
+4. creating boundary conditions parameters in ui when loading... done
+5. taking input data from user by clicking on geometry..
+5. taking input data from user by clicking on geometry..
+6. saving input data from user by clicking geometry..
+7. create json for loading data
+8. create json for saving data
+9.editing cpp file for adjusting boundary parameter data for processing
+
 When the geometry file is loaded, user needs to specify the boundary conditions.
+.....................................................................................
 The boundary conditions refer to the locations within the geometry where a specific flow condition is specified.
-..............................................
-For example an input velocity boundary condition where the flow enters the geometry at the specified velocity
-The outlet boundary condition is where the flow will exit the geometry
-The wall boundary condition is where the flow would see that part of the geometry as a wall.
-The boundary conditions should be specified by clicking on the required face in the loaded geomerty file and right clicking it and a menu should appear
+For example 
+1. an input velocity boundary condition where the flow enters the geometry at the specified velocity
+2. The outlet boundary condition is where the flow will exit the geometry
+3. The wall boundary condition is where the flow would see that part of the geometry as a wall.
+4. The boundary conditions should be specified by clicking on the required face in the loaded geomerty file and right clicking it and a menu should appear
 in which "Add to boundary condition" should appear. It should ask for a name by which the user can identify what boundary it is.
 Like the user specified it as an inlet boundary. The on another face the user specified outlet name to that face.
 Now when the user goes to the boundary condition menu, those inlet and outlet faces will be appearing.

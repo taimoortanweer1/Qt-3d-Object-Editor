@@ -25,7 +25,8 @@ public:
     Q_INVOKABLE void separateFileExtension(const QString path);
     Q_INVOKABLE void separateFileDirectory(const QString path);
     Q_INVOKABLE void executeMakeFile();
-    Q_INVOKABLE void getParameters(const QList<QString> &arr , QString fileName);
+    Q_INVOKABLE void getparameters(const QList<QString> &arr , QString fileName);
+    Q_INVOKABLE void getParametersData(const QString &arr , QString fileName);
     Q_INVOKABLE QString getFileName();
     Q_INVOKABLE void executionHandlerThread(string cmd);
     Q_INVOKABLE void stopProcessing();

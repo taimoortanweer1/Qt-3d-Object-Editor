@@ -99,11 +99,13 @@ Scene3D
                 activeFrameGraph: ForwardRenderer
                 {
                     //clearColor: Qt.rgba(0, 0.5, 1, 1)
-                    clearColor: Qt.rgba(0,0,0,0)
+                    //clearColor: Qt.rgba(0,0,0,0)
+                    clearColor: Qt.rgba(1,1,1,1)
                     camera: camera
                 }
                 //pickingSettings.pickMethod: PickingSettings.TrianglePicking
-                pickingSettings.pickMethod: PickingSettings.TrianglePicking
+                //pickingSettings.pickMethod: PickingSettings.TrianglePicking
+                pickingSettings.pickMethod: PickingSettings.FrontFace
                 //pickingSettings.faceOrientationPickingMode: pickingSettings.FrontAndBackFace
                 pickingSettings.faceOrientationPickingMode: pickingSettings.NearestPick
             },
@@ -130,12 +132,18 @@ Scene3D
 
                 ObjectPicker
                 {
+
+
                     dragEnabled: focus
                     onClicked: myScene3d.focus = true
 
                     onPressed: {
                         console.log("Object clicked! Pressed at world-intersection: ", pick.worldIntersection)
                         console.log("Triangle index: ", pick.triangleIndex)
+                        console.log("position: ", pick.position)
+                        console.log("local intersection :", pick.localIntersection)
+
+
 
                     }
                 }

@@ -13,7 +13,21 @@ WrapperFunctions::WrapperFunctions(QObject *parent) : QObject(parent)
 }
 
 
-void WrapperFunctions::getParameters(const QList<QString> &arr, QString file)
+void WrapperFunctions::getparameters(const QList<QString> &arr, QString file)
+{
+    parameters = "";
+    fileName = "";
+    //m_path = "";
+    for(int i = 0 ; i < arr.size() ; i++)
+    {
+        parameters = parameters + " " + arr[i];
+    }
+
+    fileName = file;
+    //strcpy(filename,file);
+}
+
+void WrapperFunctions::getParametersData(const QString &arr, QString file)
 {
     parameters = "";
     fileName = "";

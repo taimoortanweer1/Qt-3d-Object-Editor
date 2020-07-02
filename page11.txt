@@ -5,7 +5,7 @@ import QtQuick.Controls.Material 2.0
 import QtQuick.Controls 1.4
 import QtQuick.Dialogs 1.2
 import io.qt.examples.WrapperFunctions 1.0
-import "parameters.js" as DataParameters
+import "parameters.js" as Dataparameters
 
 
 Page {
@@ -268,10 +268,10 @@ Page {
                                             parameters[5] = spinPar6.value
                                             parameters[6] = spinPar7.value
 
-                                            console.log("filename = " + DataParameters.filename[0]);
+                                            console.log("filename = " + Dataparameters.filename[0]);
                                             wrapperCpp.handleFileChosen(fileDialogForComputation.fileUrl)
                                             var s = wrapperCpp.getFileName()
-                                            wrapperCpp.getParameters(parameters,"./" + s)
+                                            wrapperCpp.getparameters(parameters,"./" + s)
                                             wrapperCpp.executeMakeFile()
 
 
@@ -406,7 +406,7 @@ Page {
                                             parameters[6] = spinPar14.value
 
                                             wrapperCpp.handleFileChosen(fileDialogForComputation.folder)
-                                            wrapperCpp.getParameters(parameters,"./bifurcation3d")
+                                            wrapperCpp.getparameters(parameters,"./bifurcation3d")
                                             wrapperCpp.executeMakeFile()
 
                                         }
